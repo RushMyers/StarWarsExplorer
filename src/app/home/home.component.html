@@ -1,0 +1,5 @@
+<div>
+    <app-module-tile *ngFor="let module of starWarsAppModules" [module]="module"
+        (tileClick)='navigateToAppModule(module)'>
+    </app-module-tile>
+</div>

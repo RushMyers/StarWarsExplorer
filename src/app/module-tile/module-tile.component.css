@@ -4,14 +4,26 @@
 
 .module-tile {
     border-radius: 4px;
-    border: 1px solid gray;
-    color: #E8B437;
+    box-shadow: 0px 0px 5px #E8B437;
+    color: #5C76A0;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 15px;
     padding: 20px;
     transition-timing-function: ease;
     transition: opacity .1s;
-    width: 200px;
+    width: 150px;
+}
+
+@media (max-width: 500px) {
+    .module-tile {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 501px) {
+    .module-tile {
+        width: 350px;
+    }
 }

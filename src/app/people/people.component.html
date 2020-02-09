@@ -1,6 +1,7 @@
 <div>
     <p>People:</p>
     <div class="people-grid">
+        <div *ngIf="errorRetrievingPeople !== null">{{errorRetrievingPeople.message}}</div>
         <app-person-tile [person]="person" *ngFor="let person of people"></app-person-tile>
     </div>
 </div>

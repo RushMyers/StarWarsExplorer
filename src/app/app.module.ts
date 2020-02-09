@@ -13,6 +13,8 @@ import { PlanetsComponent } from './planets/planets.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { PersonTileComponent } from './person-tile/person-tile.component';
+import { PlanetTileComponent } from './planet-tile/planet-tile.component';
+import { MovieTileComponent } from './movie-tile/movie-tile.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PersonTileComponent } from './person-tile/person-tile.component';
     PeopleComponent,
     PlanetsComponent,
     HeaderComponent,
-    PersonTileComponent
+    PersonTileComponent,
+    PlanetTileComponent,
+    MovieTileComponent
   ],
   imports: [
     BrowserModule,

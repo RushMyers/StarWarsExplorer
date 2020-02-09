@@ -1,7 +1,21 @@
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+.col-left {
+    align-items: baseline;
+}
+
+.col-right {
+    align-items: flex-end;
+}
+
 .label {
     color: gray;
     font-size: 12px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 .name {
@@ -10,11 +24,11 @@
     margin-bottom: 4px;
 }
 
-.person-tile:hover {
+.planet-tile:hover {
     opacity: .8;
 }
 
-.person-tile {
+.movie-tile {
     border-radius: 4px;
     box-shadow: 0px 0px 5px #E8B437;
     color: white;
@@ -33,13 +47,13 @@
 }
 
 @media (max-width: 500px) {
-    .person-tile {
+    .movie-tile {
         width: 70vw;
     }
 }
 
 @media (min-width: 501px) {
-    .person-tile {
+    .movie-tile {
         width: 350px;
     }
 }

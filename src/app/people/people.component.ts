@@ -10,7 +10,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class PeopleComponent implements OnInit {
   public people: Person[] | null = null;
-  private errorRetrievingPeople: HttpErrorResponse | null = null;
+  public errorRetrievingPeople: HttpErrorResponse | null = null;
 
   constructor(
     private personService: PersonService,

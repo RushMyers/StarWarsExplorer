@@ -1,4 +1,6 @@
 <div>
     <p>Movies:</p>
-    <div *ngFor="let movie of movies">{{movie.title}}</div>
+    <div class="movies-grid">
+        <app-movie-tile *ngFor="let movie of movies" [movie]="movie">{{movie.title}}</app-movie-tile>
+    </div>
 </div>

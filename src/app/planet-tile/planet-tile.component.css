@@ -10,11 +10,11 @@
     margin-bottom: 4px;
 }
 
-.person-tile:hover {
+.planet-tile:hover {
     opacity: .8;
 }
 
-.person-tile {
+.planet-tile {
     border-radius: 4px;
     box-shadow: 0px 0px 5px #E8B437;
     color: white;
@@ -33,13 +33,13 @@
 }
 
 @media (max-width: 500px) {
-    .person-tile {
+    .planet-tile {
         width: 70vw;
     }
 }
 
 @media (min-width: 501px) {
-    .person-tile {
+    .planet-tile {
         width: 350px;
     }
 }

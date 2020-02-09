@@ -1,0 +1,46 @@
+.label {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.name {
+    color: #5C76A0;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.person-tile:hover {
+    opacity: .8;
+}
+
+.person-tile {
+    border: 1px solid #E8B437;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 12px;
+    transition-timing-function: ease;
+    transition: opacity .1s;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+    .person-tile {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 401px) {
+    .person-tile {
+        width: 400px;
+    }
+}
+

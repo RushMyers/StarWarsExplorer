@@ -1,18 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Movie } from '../models/movie';
 import { MovieService } from '../services/movie.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
   styleUrls: ['./movies.component.css']
 })
-export class MoviesComponent implements OnInit {
+export class MoviesComponent implements OnInit, OnDestroy {
   public movies: Movie[] | null = null;
-  private errorRetrievingMovies: any = null;
+  private errorRetrievingMovies: HttpErrorResponse | null = null;
 
   constructor(
-    private moviesService: MovieService,
+    private movieService: MovieService,
   ) { }
 
   ngOnInit(): void {
@@ -20,12 +21,15 @@ export class MoviesComponent implements OnInit {
   }
 
   private getMovies(): void {
-    this.moviesService.getMovies()
+    this.movieService.getMovies()
       .subscribe(
         (data) => {
           return this.movies = data.results;
         },
-        (error) => this.errorRetrievingMovies = error,
+        (error: HttpErrorResponse) => this.errorRetrievingMovies = error,
       );
+  }
+
+  public ngOnDestroy() {
   }
 }

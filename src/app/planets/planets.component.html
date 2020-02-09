@@ -1,1 +1,5 @@
-<p>planets works!</p>
+<div>
+    <p>Planets:</p>
+    <div *ngIf="errorRetreivingPlanets !== null">{{errorRetreivingPlanets.message}}</div>
+    <div *ngFor="let planet of planets">{{planet.name}}</div>
+</div>

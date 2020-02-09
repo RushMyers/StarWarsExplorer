@@ -1,0 +1,11 @@
+.header-banner {
+    font-size: 22px;
+    padding: 16px;
+}
+.header-container {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    height: 120px;
+    width: 100vw;
+}

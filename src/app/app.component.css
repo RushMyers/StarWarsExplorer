@@ -1,0 +1,12 @@
+.main-container {
+    background-color: #232323;
+    color: #A2A2A2;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+}
+
+.star-content {
+    max-width: 1380px;
+    width: 80%;
+}

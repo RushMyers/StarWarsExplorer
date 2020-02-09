@@ -10,7 +10,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class MoviesComponent implements OnInit, OnDestroy {
   public movies: Movie[] | null = null;
-  private errorRetrievingMovies: HttpErrorResponse | null = null;
+  public errorRetrievingMovies: HttpErrorResponse | null = null;
 
   constructor(
     private movieService: MovieService,

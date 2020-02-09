@@ -1,3 +1,7 @@
+.people-error {
+    color: #ffffff;
+}
+
 .people-grid {
     display: flex;
     flex-flow: row wrap;

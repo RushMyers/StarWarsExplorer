@@ -1,3 +1,7 @@
+.movies-error {
+    color: #ffffff
+}
+
 .movies-grid {
     display: flex;
     flex-flow: row wrap;

@@ -3,6 +3,9 @@
     <div class="movies-error" *ngIf="errorRetreivingPlanets !==null">
         {{errorRetreivingPlanets.message}}
     </div>
+    <div class="loading" *ngIf="planets === null">
+        loading planets...
+    </div>
     <div class="planets-grid">
         <div *ngIf="errorRetreivingPlanets !== null">{{errorRetreivingPlanets.message}}</div>
         <app-planet-tile *ngFor="let planet of planets" [planet]="planet"></app-planet-tile>

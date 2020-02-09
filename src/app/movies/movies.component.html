@@ -1,7 +1,10 @@
 <div>
     <p>Movies:</p>
-    <div class="movies-error" *ngIf="errorRetrievingMovies !==null">
+    <div class="movies-error" *ngIf="errorRetrievingMovies !== null">
         {{errorRetrievingMovies.message}}
+    </div>
+    <div class="loading" *ngIf="movies === null">
+        loading movies...
     </div>
     <div class="movies-grid">
         <app-movie-tile *ngFor="let movie of movies" [movie]="movie">{{movie.title}}</app-movie-tile>

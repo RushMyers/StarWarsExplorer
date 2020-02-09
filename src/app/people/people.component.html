@@ -5,7 +5,7 @@
             {{errorRetrievingPeople.message}}
         </div>
         <div class="loading" *ngIf="people === null">
-            loading planets...
+            loading people...
         </div>
         <app-person-tile [person]="person" *ngFor="let person of people"></app-person-tile>
     </div>

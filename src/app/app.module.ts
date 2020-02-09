@@ -10,6 +10,7 @@ import { ModuleTileComponent } from './module-tile/module-tile.component';
 import { MoviesComponent } from './movies/movies.component';
 import { PeopleComponent } from './people/people.component';
 import { PlanetsComponent } from './planets/planets.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PlanetsComponent } from './planets/planets.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
   ],

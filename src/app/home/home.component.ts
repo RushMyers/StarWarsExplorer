@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { starWarsAppModules } from '../constants/starWarsAppModules';
-import { StarWarsAppModule } from '../models/starWarsAppModule';
+import { StarWarsAppScenes } from '../constants/StarWarsAppScenes';
+import { StarWarsAppScene } from '../models/StarWarsAppScene';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,17 +10,17 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  public starWarsAppModules: StarWarsAppModule[];
+  public StarWarsAppScenes: StarWarsAppScene[];
 
   constructor(
     private router: Router,
   ) { }
 
   ngOnInit(): void {
-    this.starWarsAppModules = starWarsAppModules;
+    this.StarWarsAppScenes = StarWarsAppScenes;
   }
 
-  public navigateToAppModule = (appModule: StarWarsAppModule): void => {
+  public navigateToAppModule = (appModule: StarWarsAppScene): void => {
     this.router.navigate([appModule.url]);
   }
 }

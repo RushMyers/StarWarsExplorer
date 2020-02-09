@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { StarWarsAppModule } from '../models/starWarsAppModule';
-import { StarWarsModuleNames } from '../enumerations/StarWarsModuleNames';
-import { starWarsAppModules } from '../constants/starWarsAppModules';
+import { StarWarsAppScene } from '../models/StarWarsAppScene';
+import { StarWarsSceneNames } from '../enumerations/StarWarsSceneNames';
+import { StarWarsAppScenes } from '../constants/StarWarsAppScenes';
 
 @Component({
   selector: 'app-module-tile',
@@ -11,10 +11,10 @@ import { starWarsAppModules } from '../constants/starWarsAppModules';
 export class ModuleTileComponent implements OnInit {
 
   @Input()
-  module: StarWarsAppModule;
+  module: StarWarsAppScene;
 
   @Output()
-  tileClick = new EventEmitter<StarWarsAppModule>();
+  tileClick = new EventEmitter<StarWarsAppScene>();
 
   constructor() { }
 
